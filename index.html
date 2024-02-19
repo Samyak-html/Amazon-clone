@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .HoverBorder:hover {
+            border: 1px white solid;
+
+
+        }
+
+        .nav {
+            background-color: rgb(26, 24, 24);
+            padding: 2vh;
+            display: flex;
+            flex-direction: row;
+
+
+
+        }
+
+        #logo {
+            padding: 1vh;
+        }
+
+        #loc {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 3vh;
+            padding: 1vh;
+            position: relative;
+            margin-right: 1vh;
+            padding-bottom: 2.5vh;
+
+        }
+
+        #loc1 {
+            position: relative;
+            top: 0.3vh;
+            bottom: vh;
+
+        }
+
+        .search-box {
+            font-size: 15px;
+            height: 1vh;
+            padding: 2.9vh 1vh;
+            
+            width: 30%;
+            border: none;
+            resize: none;
+            scroll-behavior:unset;
+            overflow-y: hidden;
+
+        }
+        .search-category{
+            padding: 2vh;
+            padding-bottom:1.5vh ;
+            border: none;
+
+        }
+        .search-category:hover{
+            background-color: rgba(255, 255, 255, 0.76);
+        }
+        #search-button{
+            background-color: rgb(253, 196, 40);
+            border: none;
+            /* padding-left:0.9vh;
+            padding-right: 1vh; */
+            padding: 1.6vh;
+            margin-right: 1vh;
+            
+        }
+        #search-button:hover{
+            background-color: rgb(224, 173, 33);
+        }
+        #Language-box{
+            padding: 2vh;
+            background-color:rgb(26, 24, 24); 
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border:none;
+            font-weight: 600;
+            margin-left: 1vh;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img src="logo.png" id="logo" alt="logo" height="30vh" class="HoverBorder">
+            <div class="HoverBorder" id="loc"><img id="loc1" src="loc.png" height="20vh"><b>Update location</b></div>
+            
+            <select class="search-category">
+                <option value="All category">All</option>
+            </select><textarea class="search-box" placeholder="Search Amazon.in"></textarea><button
+                id="search-button"><img src="search.png" height="20vh" alt=""></button>
+            <div class="HoverBorder" ><select id="Language-box">
+                <option><b>EN</b></option>
+            </select>
+
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
